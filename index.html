@@ -11,16 +11,35 @@
 </head>
 <body>
     <div class="header">
-        <div class="search"></div>
-        <div class="user-info"></div>
-        <div class="greeting"></div>
-        <div class="user-actions"></div>
+        <div class="search">
+            <img class="search-icon icon" src="./assets/search.svg">
+            <input class="searchbox" type="text" name="search-value">
+        </div>
+        <div class="user-info" >
+            <img class="icon" src="./assets/notification.svg">
+            <img class="user-pic" src="./assets/profile-pictures/profile-1.jpg.webp">
+            <p>Morgan Oakley</p>
+        </div>
+        <div class="greeting">
+            <div class="greeting-profile">
+                <img src="./assets/profile-pictures/profile-1.jpg.webp">
+            </div>
+            <div class="greeting-message">
+                <p class="small">Hi There!</p>
+                <p class="large">Morgan Oakley(@morgan)</p>
+            </div>
+        </div>
+        <div class="user-actions">
+            <button class="action-button">New</button>
+            <button class="action-button">Upload</button>
+            <button class="action-button">Share</button>
+        </div>
     </div>
 
     <div class="sidebar">
         <div class="dashboard-title">
-            <img class="dashboard-icon icon" src="./assets/dashboard.svg" alt="dashboard icon">
-            Dashboard
+            <a href="#"><img class="dashboard-icon" src="./assets/dashboard.svg" alt="dashboard icon">
+            Dashboard</a>
         </div>
         <div class="side-nav">
             <a href="#"><img class="icon" src="./assets/home.svg">Home</a>
@@ -38,9 +57,133 @@
     </div>
 
     <div class="main">
-        <div class="projects"></div>
-        <div class="announcements"></div>
-        <div class="trending"></div>
+        <div class="projects">
+            <h4>Projects</h4>
+            <div class="project-container">
+                <div class="project">
+                    <h5>Super Cool Project</h5>
+                    <p class="project-description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id
+                        facilisis felis accumsan nec.</p>
+                    <div>
+                        <img class="icon" src="./assets/star-plus.svg">
+                        <img class="icon" src="./assets/eye-plus.svg">
+                        <img class="icon" src="./assets/source-fork.svg">
+                    </div>
+                </div>
+                <div class="project">
+                    <h5>Less Cool Project</h5>
+                    <p class="project-description">Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius
+                        pellentesque lacus.</p>
+                    <div>
+                        <img class="icon" src="./assets/star-plus.svg">
+                        <img class="icon" src="./assets/eye-plus.svg">
+                        <img class="icon" src="./assets/source-fork.svg">
+                    </div>
+                </div>
+                <div class="project">
+                    <h5>Impossible App</h5>
+                    <p class="project-description">In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis
+                        id.</p>
+                    <div>
+                        <img class="icon" src="./assets/star-plus.svg">
+                        <img class="icon" src="./assets/eye-plus.svg">
+                        <img class="icon" src="./assets/source-fork.svg">
+                    </div>
+                </div>
+                <div class="project">
+                    <h5>Easy Peasy Project</h5>
+                    <p class="project-description">Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor
+                        commodo, ac bibendum magna tincidunt.</p>
+                    <div>
+                        <img class="icon" src="./assets/star-plus.svg">
+                        <img class="icon" src="./assets/eye-plus.svg">
+                        <img class="icon" src="./assets/source-fork.svg">
+                    </div>
+                </div>
+                <div class="project">
+                    <h5>Ad Blocker</h5>
+                    <p class="project-description">Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada
+                        eros..</p>
+                    <div>
+                        <img class="icon" src="./assets/star-plus.svg">
+                        <img class="icon" src="./assets/eye-plus.svg">
+                        <img class="icon" src="./assets/source-fork.svg">
+                    </div>
+                </div>
+                <div class="project">
+                    <h5>Money Maker</h5>
+                    <p class="project-description">Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac
+                        scelerisque tortor purus sit amet ex.
+                        Pellentesque mollis nec sem vel aliquam.</p>
+                    <div>
+                        <img class="icon" src="./assets/star-plus.svg">
+                        <img class="icon" src="./assets/eye-plus.svg">
+                        <img class="icon" src="./assets/source-fork.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="announcements">
+            <h4>Announcements</h4>
+            <div class="announcements-container">
+                <div class="announcement">
+                    <h5>Site Maintenance</h5>
+                    <p class="announcement-msg">Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec
+                        hendrerit sodales congue….</p>
+                </div>
+                <div class="announcement other-siblings">
+                    <h5>Community Share Day</h5>
+                    <p class="announcement-msg">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum
+                        accumsan porttitor...</p>
+                </div>
+                <div class="announcement other-siblings">
+                    <h5>Updated Privacy Policy</h5>
+                    <p class="announcement-msg">Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in
+                        mattis...</p>
+                </div>
+            </div>
+        </div>
+        <div class="trending">
+            <h4>Trending</h4>
+            <div class="trending-container">
+                <div class="trending-profile">
+                    <div class="greeting-profile-pic">
+                        <img src="./assets/profile-pictures/cat.png">
+                    </div>
+                    <div class="trend-profile-info">
+                        <p class="small">@tegan</p>
+                        <p class="trend-name">Wolrd Peace Builder</p>
+                    </div>
+                </div>
+                <div class="trending-profile">
+                    <div class="greeting-profile-pic">
+                        <img src="./assets/profile-pictures/profile-1.jpg.webp">
+                    </div>
+                    <div class="trend-profile-info">
+                        <p class="small">@morgan</p>
+                        <p class="trend-name">Super Cool Project</p>
+                    </div>
+                </div>
+                <div class="trending-profile">
+                    <div class="greeting-profile-pic">
+                        <img src="./assets/profile-pictures/fluffy.jpg">
+                    </div>
+                    <div class="trend-profile-info">
+                        <p class="small">@kendall</p>
+                        <p class="trend-name">Life Changing App</p>
+                    </div>
+                </div>
+                <div class="trending-profile">
+                    <div class="greeting-profile-pic">
+                        <img src="./assets/profile-pictures/fox.png">
+                    </div>
+                    <div class="trend-profile-info">
+                        <p class="small">@alex</p>
+                        <p class="trend-name">No Traffic Maker</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
 </body>
